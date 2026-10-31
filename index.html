@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026 欧洲行 · 游记</title>
+<style>
+:root{--bg:#f5efe2;--card:#fffaf0;--ink:#2a2823;--mut:#7a7466;--ln:#ddd3bd;--ac:#b4502d;--ok:#2f7a5a}
+@media(prefers-color-scheme:dark){:root{--bg:#171613;--card:#211f1b;--ink:#ece6d6;--mut:#9a9381;--ln:#38342c;--ac:#e08a62;--ok:#6fc29c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 -apple-system,"PingFang SC","Noto Serif SC","Songti SC",serif;max-width:760px;margin:auto;padding:16px 16px 60px}
+h1{font-size:26px;margin:18px 0 2px}h2{font-size:18px;margin:34px 0 10px;border-bottom:1px solid var(--ln);padding-bottom:6px}h3{font-size:16px;margin:0}
+.sub,.m{color:var(--mut);font-size:13px}
+a{color:var(--ac);text-decoration:none;border-bottom:1px dotted var(--ac)}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:14px 16px}
+#cd .big{display:flex;gap:10px;margin-top:8px}#cd .big div{flex:1;text-align:center;background:var(--bg);border-radius:8px;padding:6px 0}
+#cd b{display:block;font:600 28px/1.2 ui-monospace,Menlo,monospace;color:var(--ac)}#cd i{font-style:normal;font-size:12px;color:var(--mut)}
+svg{width:100%;height:auto}
+.ph{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.ph figure{margin:0;position:relative;aspect-ratio:1;overflow:hidden;border-radius:8px;cursor:zoom-in;background:var(--ln)}.ph figure:last-child:nth-child(odd){grid-column:1/-1;aspect-ratio:2/1}.ph img{width:100%;height:100%;object-fit:cover;display:block}.ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 8px 5px;font-size:12px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55))}.ph figcaption:empty{display:none}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.97);display:none;flex-direction:column;align-items:center;justify-content:center;z-index:9;color:#ddd}#lb.on{display:flex}#lb img{max-width:96vw;max-height:82vh;object-fit:contain}#lb .c{margin-top:10px;font-size:13px}#lb button{position:absolute;background:none;border:0;color:#fff;font-size:38px;padding:10px 16px;cursor:pointer}#lb .x{top:8px;right:8px}#lb .p{left:0;top:45%}#lb .n{right:0;top:45%}
+.lg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;margin-top:6px}.lg span:before{content:"";display:inline-block;width:14px;height:3px;background:var(--c);margin-right:5px;vertical-align:middle}
+.g{margin:14px 0 4px;font-weight:600}.r{display:grid;grid-template-columns:96px 1fr;gap:8px;padding:6px 0;border-bottom:1px dashed var(--ln)}
+.r .t{color:var(--mut);font:13px ui-monospace,Menlo,monospace}.r .t.b{color:var(--ok)}.tk{font-size:11px;color:var(--ok);border:1px solid var(--ok);border-radius:4px;padding:0 4px;margin-left:6px;white-space:nowrap}
+.day{margin:18px 0}.day>summary,.rt>summary{cursor:pointer;color:var(--ac);font-size:13px}
+.hd{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.dy{margin:10px 0 0;padding:8px 12px;border-left:3px solid var(--ac);background:var(--bg);font-size:14px;border-radius:0 8px 8px 0}.dy:before{content:"日记 · ";color:var(--mut);font-size:12px}
+ul{padding-left:20px;margin:6px 0}li{margin:4px 0}
+</style></head><body>
+<h1>2026 欧洲行 · 游记</h1>
+<div class="sub">10月7日 – 10月23日 · 2 人 · 巴黎 → 日内瓦 → 米兰 → 佛罗伦萨 → 的里雅斯特</div>
+
+<div class="card" id="cd" style="margin-top:14px"></div>
+
+<h2>行程总览</h2>
+<div class="card"><div id="map"></div></div>
+
+<h2>已确认的订单</h2>
+<div id="bk"></div>
+
+<h2>逐日行程与日记</h2>
+<div id="days"></div>
+
+<h2>待办清单</h2>
+<ul>
+<li>酒店：巴黎 6 晚、日内瓦 1 晚、米兰 3 晚、佛罗伦萨 3 晚、的里雅斯特 2 晚，订单还没收到，补上后写进“已确认”。</li>
+<li>10/12 巴黎东站往返兰斯的车票：没收到文件。</li>
+<li>10/14 万国宫：只有一位访客的入场凭证，另一位的待补。</li>
+<li>10/12 Pommery：票面只有一位姓名，需确认是否两人。</li>
+<li>日记里没提、待确认是否到访：埃菲尔铁塔、凯旋门、大皇宫、莎士比亚书店、圣礼拜堂、斯卡拉歌剧院、布雷拉、时尚四边形、玉榭小地窖、皮具学校。</li>
+<li>备选未采用：10/8 枫丹白露一日（Transilien R 线，枫丹白露宫 14 欧）；皮诺收藏三层餐厅、贾科梅蒂、布德尔博物馆。</li>
+</ul>
+
+<h2>实用贴士</h2>
+<ul>
+<li>巴黎 6 个主要火车站互不相通：从日内瓦回来在里昂站，去布鲁塞尔在北站，别跑错。</li>
+<li>意大利纸质车票进站前要在绿色打票机上打卡；电子票不用。</li>
+<li>Malpensa Express 单程 €15，在 Trenord 售票机买，或闸机刷银行卡/Apple Pay。</li>
+<li>高铁要提前订票才有低价；Trenitalia 车门发车前 1 分钟关，TGV 要求提前 2 分钟到站台。</li>
+<li>巴黎圣母院登顶 424 级、佛罗伦萨穹顶 463 级，都没有电梯；穹顶入口前背包要寄存在 Piazza Duomo 38/r。</li>
+<li>进米兰大教堂不能穿短裤、背心；佛罗伦萨大教堂不能露腿和肩膀。</li>
+<li>10 月欧洲日落早，塞纳河游船选 20:15 前后看灯光。</li>
+</ul>
+
+<script src="photos.js" onerror="void 0"></script>
+<script>
+const Z="+02:00",P2=n=>String(n).padStart(2,"0");
+const Q=s=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(s);
+const D=[
+{n:7,w:"三",c:"北京 → 巴黎",z:"+08:00",i:[["07:25","北京首都 T3 起飞 · EK309 → 迪拜","Beijing Capital International Airport T3",1,"+08:00"],["14:40","迪拜 T3 转机起飞 · EK075 → 巴黎","Dubai International Airport Terminal 3",1,"+04:00"],["20:00","抵达戴高乐 T2C，入住巴黎","Paris Charles de Gaulle Airport Terminal 2C",1]],g:"赶路"},
+{n:8,w:"四",c:"巴黎",i:[["10:00","巴黎歌剧院买票（周日芭蕾）","Palais Garnier"],["—","地陪带路 · 皮诺收藏（证券交易所）","Pinault Collection Bourse de Commerce"],["19:00","圆点剧院《De lumière》","Théâtre du Rond-Point Paris",1]],g:"买剧票，和地陪小台一起喝咖啡，吃饭，看皮诺美术馆的展览。晚上吃了中东菜，在圆点美术馆看戏剧"},
+{n:9,w:"五",c:"巴黎 · 博物馆日",i:[["08:30","旅馆出发，步行约 30 分钟",""],["09:00","双叟咖啡馆","Les Deux Magots"],["11:00","奥赛博物馆（联票 Carte Blanche）","Musée d'Orsay"],["14:30","橘园美术馆","Musée de l'Orangerie"],["18:00","卢浮宫 · 叙利馆地下中世纪遗址","Louvre Museum Pyramide",1]],g:"去双叟咖啡馆，水撒到了包里，去奥赛买年卡，去橘园拍照片，吃了蜗牛和沙拉，去卢浮宫"},
+{n:10,w:"六",c:"巴黎",i:[["—","穆浮达街 / 玛黑区闲逛","Rue Mouffetard Paris"],["—","莎士比亚书店","Shakespeare and Company Paris"],["—","Glazart After O’Clock","Glazart Paris"],["14:30","巴黎圣母院登顶（424 级）","Notre-Dame de Paris",1],["16:00","圣母院管风琴演出","Notre-Dame de Paris"],["20:15","塞纳河游船","Bateaux Parisiens Paris"]],g:"到家附近吃早饭，上厕所遇到狂敲门的人。去glazart听音乐，开始很紧张。去巴黎圣母院。吃现代法餐，去卢森堡公园，塞纳河游船"},
+{n:11,w:"日",c:"巴黎",i:[["—","蒙马特高地 · 蒙马特博物馆","Musée de Montmartre"],["—","全景廊街","Passage des Panoramas Paris"],["14:30","巴黎歌剧院芭蕾《Paysages intérieurs》","Palais Garnier"],["17:00","圣厄斯塔什教堂管风琴","Église Saint-Eustache Paris"],["—","大皇宫 · 凯旋门","Arc de Triomphe"],["—","埃菲尔铁塔","Eiffel Tower"],["—","玉榭小地窖","Caveau de la Huchette"]],g:"去蒙马特高地看圣心大教堂，吃可丽饼，去巴黎歌剧院差点迟到，还提前好长时间离场，到厄斯塔什教堂听管风琴，吃巴黎家常小馆"},
+{n:12,w:"一",c:"巴黎 · 兰斯",i:[["10:28","巴黎东站 → 兰斯中心站（11:14 到）","Gare de Paris-Est"],["—","兰斯大教堂","Reims Cathedral"],["14:00","Pommery 酒庄 · Brut Royal 参观","Champagne Pommery Reims",1],["19:00","返回巴黎","Gare de Reims"]],g:"去兰斯，逛兰斯大教堂，在一家小小的地中海餐厅吃饭，参观Pommery酒庄，吃牛肉塔塔，没吃成蛙腿"},
+{n:13,w:"二",c:"巴黎 → 日内瓦",i:[["11:30","到巴黎里昂站（1、2 号厅）","Gare de Lyon Paris"],["12:18","TGV Lyria 9773 → 日内瓦（15:36 到）· 15 车 560/561","Gare de Lyon Paris",1],["—","日内瓦大喷泉","Jet d'Eau Geneva"],["—","老城中心","Geneva Old Town"]],g:"退房打车去吃黎巴嫩菜，找不到车站，到日内瓦，逛老城区，吃瑞士火锅，焦虑"},
+{n:14,w:"三",c:"日内瓦 → 米兰",i:[["10:00","万国宫 · Pregny 门导览","Palais des Nations Pregny Gate Geneva",1],["13:27","EC 45 日内瓦 → 米兰中央（17:50 到）· 6 车 85/87","Gare de Genève-Cornavin",1]],g:"寄存行李到万国宫参观，随便吃点星巴克，坐火车去米兰，吃炖牛膝"},
+{n:15,w:"四",c:"米兰 · 科莫",i:[["10:00","米兰大教堂登顶（电梯，2 号门）","Duomo di Milano",1],["—","斯福尔扎城堡 · 森皮奥内公园 · 和平之门","Castello Sforzesco"],["—","Cadorna → 科莫湖北站（约 1 小时）","Milano Cadorna"]],g:"一路狂走到Duomo，登顶。逛了一下AC米兰的店。去Como先简单吃点，逛老城区，排队坐缆车，雾太大又下来吃湖鱼特色菜，吃gelato"},
+{n:16,w:"五",c:"米兰",i:[["—","圣西罗球场","San Siro Stadium Milan"],["—","AC 米兰之家","Casa Milan"],["—","布雷拉街区","Brera Milan"],["—","斯卡拉歌剧院 · 时尚四边形","Teatro alla Scala"],["—","斯福尔扎城堡","Castello Sforzesco"]],g:"吃酒店早餐，喝咖啡，去圣西罗球场，去米兰之家，坐铛铛车，吃手工意面，去斯福尔扎城堡，买球衣，喝酒庆祝。回到酒店又在楼下喝酒"},
+{n:17,w:"六",c:"米兰 → 佛罗伦萨",i:[["12:10","Frecciarossa 9535 米兰中央 → 佛罗伦萨 S.M.N.（14:04 到）· 9 车 3A/3B","Milano Centrale",1]],g:"喝咖啡，坐铛铛车去火车站，到佛罗伦萨，人好多，吃牛肚包和gelato。随机进一个博物馆休息。宝宝感冒了"},
+{n:18,w:"日",c:"佛罗伦萨",i:[["—","Ala Grande Caffè (Caffè Rosano)","Caffè Rosano Florence"],["09:15","学院美术馆（看大卫），先去窗口换纸票","Galleria dell'Accademia Florence",1],["14:15","圣母百花大教堂穹顶（463 级），背包先寄存","Duomo Florence Porta della Mandorla",1],["16:45","乌菲兹美术馆","Uffizi Gallery",1]],g:"去学院美术馆看大卫，吃反了我和宝宝的三明治，喝咖啡，登顶圣母百花，在圣母百花博物馆休息。看乌菲兹，吃比萨，研究大牛排"},
+{n:19,w:"一",c:"佛罗伦萨",i:[["—","Giunti Odeon 书店电影院","Giunti Odeon Florence"],["—","Sant'Ambrogio 市场午饭","Mercato di Sant'Ambrogio Florence"],["—","Scuola del Cuoio 皮具学校","Scuola del Cuoio Florence"],["—","Papini Paolo 皮具","Papini Paolo Florence"],["—","纪念品：Scrivimi 等","Scrivimi Firenze"],["—","大牛排","bistecca alla fiorentina Florence"]],g:"去市场，没吃到牛肚，喝咖啡，去书店里的电影院，吃大牛排，吃同一家店第二次gelato，一路闲逛+买纪念品"},
+{n:20,w:"二",c:"佛罗伦萨 → 的里雅斯特",i:[["11:30","退房，S.M.N. → Rifredi 站","Firenze Rifredi"],["13:33","Intercity 588 Rifredi → 的里雅斯特中央（18:37 到）· 3 车 8A/8C","Firenze Rifredi",1]],g:"去中央市场吃牛肚喝咖啡，吃gelato，退房去车站买三明治，等车等很久。到的里雅斯特，我也感冒了"},
+{n:21,w:"三",c:"的里雅斯特 · 皮兰",i:[["09:20","大巴 → 科佩尔（9:59 到；另有 11:45 班）","Trieste Centrale"],["—","科佩尔 → 皮兰（每 20 分钟一班）","Piran Slovenia"],["17:30","科佩尔 → 的里雅斯特（另有 18:00 班）","Koper bus station"]],g:"到广场吃早餐喝咖啡，坐公交到Koper，再到Piran。吃大海鲜。到教堂朝圣拍照片，逛逛喝咖啡。原路返回，吃gelato，吃特色菜餐厅"},
+{n:22,w:"四",c:"的里雅斯特 → 米兰 → 回程",i:[["09:39","Frecciarossa 9726 → 米兰中央（13:47 到）· 5 车 20C/20D","Trieste Centrale",1],["—","Malpensa Express 到机场（€15）","Milano Centrale"],["22:15","米兰马尔彭萨 T1 起飞 · EK092 → 迪拜","Milan Malpensa Airport Terminal 1",1]],g:"赶路"},
+{n:23,w:"五",c:"迪拜 → 北京",z:"+04:00",i:[["06:20","迪拜 T3 抵达，转机","Dubai International Airport Terminal 3",1,"+04:00"],["10:40","迪拜起飞 · EK308 → 北京","Dubai International Airport Terminal 3",1,"+04:00"],["22:20","北京首都 T3 抵达","Beijing Capital International Airport T3",1,"+08:00"]],g:"到家"}];
+
+/* 倒计时：所有时间点都带时区 */
+const E=[];D.forEach(d=>d.i.forEach(it=>{if(/^\d\d:\d\d$/.test(it[0]))E.push({t:new Date(`2026-10-${P2(d.n)}T${it[0]}:00${it[4]||d.z||Z}`),x:`10/${d.n} ${it[1]}`,l:it[0],tz:it[4]||d.z||Z})}));
+E.sort((a,b)=>a.t-b.t);
+const TZN={"+08:00":"北京","+04:00":"迪拜","+02:00":"当地"};
+const bj=t=>new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Shanghai",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit",hour12:false}).format(t);
+function tick(){const now=new Date(),nx=E.find(e=>e.t>now),past=!nx,e=nx||E[E.length-1];
+const s=Math.floor(Math.abs(e.t-now)/1000),v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];
+document.getElementById("cd").innerHTML=`<div class="m">此刻关注 · ${past?"旅程已结束，距最后一站已过":"下一个行程事件"}</div><div style="margin-top:4px">${e.x}</div><div class="m">${TZN[e.tz]}时间 ${e.l} · 北京时间 ${bj(e.t)}</div><div class="big">${["天","时","分","秒"].map((u,k)=>`<div><b>${P2(v[k])}</b><i>${u}</i></div>`).join("")}</div>`}
+tick();setInterval(tick,1000);
+
+/* 手绘感路线图 */
+const S=(lo,la)=>[(lo+1.5)*50,(50.9-la)*85+40];
+let seed=11;const R=()=>(seed=seed*16807%2147483647)/2147483647;
+const LD=[[[-5,48.4],[-1.5,48.7],[1.6,50.9],[2.5,51.1],[4.2,50],[6.2,49.5],[8.2,49],[7.6,47.6],[6.1,46.3],[7,45.9],[6.9,44.3],[7.5,43.8],[3.1,43],[3,42.4],[-1.8,43.4],[-1.2,45.5],[-4.5,47.8]],
+[[6.1,46.3],[6.8,47.4],[7.6,47.6],[9.5,47.5],[10.4,46.9],[10,46.2],[8.8,46],[7,45.9]],
+[[6.9,44.3],[7,45.9],[8.8,46],[10.4,46.5],[12.3,47],[13.7,46.5],[13.8,45.6],[12.4,45.3],[12.3,44.5],[13.6,43.6],[14,41.5],[10.6,41.5],[10.3,43.5],[9.8,44.1],[8.9,44.4],[7.5,43.8]],
+[[13.7,46.5],[16,46.6],[16,43.5],[14.4,44.6],[13.9,44.8],[13.55,45.1],[13.6,45.5],[13.8,45.6]]];
+const LP=LD.map(p=>p.map(([a,b])=>S(a,b))),LC=["#e4e6bd","#ebe4cd","#e9e4b8","#dfe3b4"];
+const inP=(x,y,p)=>{let c=0;for(let i=0,j=p.length-1;i<p.length;j=i++){const[a,b]=p[i],[u,v]=p[j];if((b>y)!=(v>y)&&x<(u-a)*(y-b)/(v-b)+a)c=!c}return c};
+const onL=(x,y)=>LP.some(p=>inP(x,y,p));
+const CT={巴黎:[2.35,48.86],兰斯:[4.03,49.25],日内瓦:[6.14,46.2],米兰:[9.19,45.46],科莫:[8.75,46.25],佛罗伦萨:[11.25,43.77],的里雅斯特:[13.77,45.65],皮兰:[14.9,45.1]};
+const CP={};for(const k in CT)CP[k]=S(...CT[k]);
+const K=(x,y)=>(x<420&&y<125)||(x>640&&y<215)||(x<345&&y>470);
+const near=(x,y,d)=>Object.values(CP).some(([a,b])=>Math.hypot(a-x,b-y)<d);
+const tw=t=>[...t].reduce((a,c)=>a+(c.charCodeAt(0)>255?1:.55),0);
+const F="'Kaiti SC',STKaiti,KaiTi,'PingFang SC',serif",FL="Georgia,'Palatino Linotype',serif";
+const tx=(x,y,t,sz,fill,o="")=>`<text x="${x}" y="${y}" font-size="${sz}" fill="${fill}" ${o}>${t}</text>`;
+const peak=(x,y,s)=>`<path d="M${x-s},${y}L${x},${y-s*1.3}L${x+s},${y}Z" fill="#b8b09b"/><path d="M${x},${y-s*1.3}L${x+s},${y}L${x+s*.15},${y}Z" fill="#8c8571" opacity=".55"/><path d="M${x-s*.32},${y-s*.9}L${x},${y-s*1.3}L${x+s*.32},${y-s*.9}L${x},${y-s*.72}Z" fill="#fff"/>`;
+const tree=(x,y,r)=>`<ellipse cx="${x+2}" cy="${y+r*.9}" rx="${r}" ry="${r*.45}" fill="#3d4a24" opacity=".18"/><circle cx="${x}" cy="${y}" r="${r}" fill="${["#6f9a4a","#5d8a3f","#7fa656"][R()*3|0]}"/><circle cx="${x-r*.3}" cy="${y-r*.3}" r="${r*.55}" fill="#9cc16b" opacity=".7"/>`;
+const house=(x,y,s)=>`<path d="M${x},${y}h${s}v${-s*.8}h${-s}z" fill="#f2dcb8"/><path d="M${x+s},${y}v${-s*.8}l3,2v${s*.8}z" fill="#d7b88a"/><path d="M${x-2},${y-s*.8}L${x+s/2},${y-s*1.35}L${x+s+3},${y-s*.8}Z" fill="${R()<.5?"#c8553d":"#d9714d"}"/>`;
+const eiffel=(x,y)=>`<path d="M${x-9},${y}L${x},${y-38}L${x+9},${y}M${x-5},${y-14}H${x+5}M${x-7},${y-6}H${x+7}" fill="none" stroke="#5a4a3a" stroke-width="2.2" stroke-linejoin="round"/>`;
+const cath=(x,y)=>`<rect x="${x-9}" y="${y-12}" width="18" height="12" fill="#e2d2b0"/>`+[-9,4].map(d=>`<rect x="${x+d}" y="${y-28}" width="6" height="28" fill="#d9c9a8"/><path d="M${x+d-1},${y-28}L${x+d+3},${y-38}L${x+d+7},${y-28}Z" fill="#8f8f8a"/>`).join("");
+const jet=(x,y)=>`<path d="M${x},${y}V${y-34}M${x},${y-34}q-8,6-10,16M${x},${y-34}q8,6,10,16" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>`;
+const duomo=(x,y)=>`<rect x="${x-18}" y="${y-8}" width="36" height="8" fill="#efe8da" stroke="#b7aa8e" stroke-width=".8"/>`+[-3,-2,-1,0,1,2,3].map(i=>`<path d="M${x+i*5-2},${y-8}L${x+i*5},${y-30+Math.abs(i)*3}L${x+i*5+2},${y-8}Z" fill="#f4eee2" stroke="#b7aa8e" stroke-width=".8"/>`).join("");
+const dome=(x,y)=>`<rect x="${x-12}" y="${y-8}" width="24" height="8" fill="#f0e2c4"/><path d="M${x-11},${y-8}Q${x},${y-34} ${x+11},${y-8}Z" fill="#c8553d"/><rect x="${x-1.5}" y="${y-30}" width="3" height="7" fill="#f0e2c4"/><rect x="${x+16}" y="${y-30}" width="6" height="30" fill="#ead9b8"/>`;
+const boat=(x,y)=>`<path d="M${x-10},${y}h20l-4,5h-12z" fill="#7a4a30"/><path d="M${x},${y-1}V${y-20}L${x+10},${y-3}Z" fill="#fff"/>`;
+const tower=(x,y)=>`<rect x="${x-3}" y="${y-20}" width="6" height="20" fill="#e2d2b0"/><path d="M${x-4},${y-20}L${x},${y-30}L${x+4},${y-20}Z" fill="#c8553d"/>`;
+const pill=(cx,cy,t)=>{const w=tw(t)*12+22;return `<rect x="${cx-w/2}" y="${cy-12}" width="${w}" height="24" rx="12" fill="#fffaf0" stroke="#d6c59f" filter="url(#sh)"/>`+tx(cx,cy+4.5,t,12,"#5a3a2a",'text-anchor="middle"')};
+const box=(cx,cy,n,zh,en)=>{const w=Math.max(tw(zh)*17,tw(en)*7.4)+64;return `<rect x="${cx-w/2}" y="${cy-23}" width="${w}" height="46" rx="12" fill="#fffaf0" stroke="#cdbd9a" filter="url(#sh)"/><circle cx="${cx-w/2+22}" cy="${cy}" r="13" fill="#b23a2a"/>`+tx(cx-w/2+22,cy+5,n,15,"#fff",'text-anchor="middle" font-weight="700"')+tx(cx-w/2+43,cy-2,zh,17,"#2a2018",`font-weight="700" font-family="${F}"`)+tx(cx-w/2+43,cy+14,en,11.5,"#6b5b45",`font-style="italic" font-family="${FL}"`)};
+const sm=(lx,cy,zh,en,l2)=>{const w=Math.max(tw(zh+" "+en)*8.2,tw(l2)*10.6)+26;return `<rect x="${lx}" y="${cy-20}" width="${w}" height="40" rx="10" fill="#fffaf0" stroke="#cdbd9a" filter="url(#sh)"/>`+tx(lx+12,cy-3,zh+' <tspan font-size="11" font-style="italic" fill="#6b5b45">'+en+"</tspan>",14,"#2a2018",'font-weight="700"')+tx(lx+12,cy+13,l2,11.5,"#8a3a2a")};
+let g='<svg viewBox="0 0 900 700" style="display:block;border-radius:10px"><defs><filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9"/></filter><filter id="sh" x="-10%" y="-25%" width="120%" height="160%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#5a4020" flood-opacity=".3"/></filter><filter id="gr"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2"/><feColorMatrix values="0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .18 0 0 0 .3 0"/></filter><marker id="ar" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="15" markerHeight="15" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,1L9,5L0,9Z" fill="#d0392b"/></marker></defs><rect width="900" height="700" fill="#bfdcd8"/>';
+for(let n=0,c=0;n<900&&c<75;n++){const x=R()*880,y=R()*690;if(!onL(x,y)&&!K(x,y)){c++;g+=`<path d="M${x},${y}q4-4,8,0t8,0" fill="none" stroke="#fff" stroke-opacity=".65" stroke-width="1.4"/>`}}
+g+='<g filter="url(#wob)">'+LP.map((p,i)=>`<path d="M${p.join("L")}Z" fill="${LC[i]}" stroke="#b5a97f" stroke-width="1.6" stroke-linejoin="round"/>`).join("")+"</g>";
+const [gx,gy]=CP.日内瓦,[cx,cy]=CP.科莫;
+g+=`<ellipse cx="${gx+24}" cy="${gy-12}" rx="30" ry="8" transform="rotate(-32 ${gx+24} ${gy-12})" fill="#bfdcd8" stroke="#9cc3c0"/><ellipse cx="${cx+7}" cy="${cy+18}" rx="5" ry="19" fill="#bfdcd8" stroke="#9cc3c0"/>`;
+const T=[];for(let n=0;n<1500&&T.length<150;n++){const x=R()*880,y=R()*690;if(onL(x,y)&&!K(x,y)&&!near(x,y,62)&&!inP(x,y,LP[1])&&!(y>375&&y<470&&x>600&&x<740))T.push([x,y,5+R()*3.5])}
+const M=[];for(let n=0;n<600&&M.length<26;n++){const x=425+R()*160,y=340+R()*120;if(inP(x,y,LP[1])&&!near(x,y,42))M.push([x,y,12+R()*8])}
+for(let n=0;n<300&&M.length<42;n++){const x=600+R()*130,y=382+R()*40;if(onL(x,y)&&!near(x,y,50))M.push([x,y,9+R()*5])}
+for(let n=0;n<8;n++){const t=n/7,x=565+t*62+R()*20,y=548+t*52+R()*14;if(onL(x,y)&&!near(x,y,40))M.push([x,y,7+R()*3])}
+g+=[...T.map(a=>[a[1],tree(...a)]),...M.map(a=>[a[1],peak(...a)])].sort((a,b)=>a[0]-b[0]).map(a=>a[1]).join("");
+const HC={巴黎:[22,62],米兰:[18,52],佛罗伦萨:[16,48],日内瓦:[11,40],的里雅斯特:[11,36],兰斯:[7,26],科莫:[5,22],皮兰:[6,24]};
+const H=[];for(const k in HC){const[x0,y0]=CP[k];for(let i=0,c=0;i<80&&c<HC[k][0];i++){const a=R()*6.28,r=14+R()*HC[k][1],x=x0+Math.cos(a)*r,y=y0+Math.sin(a)*r*.7;if(onL(x,y)&&!K(x,y)){c++;H.push([y,house(x,y,7+R()*5)])}}}
+g+=H.sort((a,b)=>a[0]-b[0]).map(a=>a[1]).join("");
+const LM=[[eiffel,"巴黎",26,10],[cath,"兰斯",-20,12],[jet,"日内瓦",6,-4],[duomo,"米兰",26,10],[dome,"佛罗伦萨",24,-8],[boat,"的里雅斯特",-34,32],[tower,"皮兰",16,-6]];
+LM.forEach(([f,k,dx,dy])=>g+=f(CP[k][0]+dx,CP[k][1]+dy));
+g+=`<g transform="translate(${CP.的里雅斯特[0]-62},${CP.的里雅斯特[1]+52})">${boat(0,0)}</g>`;
+const LG=[["巴黎","兰斯",0,""],["巴黎","日内瓦",.12,"10/13 · 3 小时 18 分"],["日内瓦","米兰",.1,"10/14 · 4 小时 23 分",-20,20],["米兰","科莫",0,""],["米兰","佛罗伦萨",.1,"10/17 · 1 小时 54 分",-66,4],["佛罗伦萨","的里雅斯特",.1,"10/20 · 5 小时 04 分",-10,22],["的里雅斯特","皮兰",0,""],["的里雅斯特","米兰",.18,"10/22 · 4 小时 08 分"]];
+let ch="";
+LG.forEach(([a,b,bw,t,ox=0,oy=0])=>{const[p,q]=[CP[a],CP[b]],dx=q[0]-p[0],dy=q[1]-p[1],c=[(p[0]+q[0])/2-dy*bw,(p[1]+q[1])/2+dx*bw];
+g+=`<path d="M${p}Q${c} ${q}" fill="none" stroke="#d0392b" stroke-width="3.6" stroke-linecap="round" stroke-dasharray="1 7" marker-end="url(#ar)"/>`;
+if(t)ch+=pill(.25*p[0]+.5*c[0]+.25*q[0]+ox,.25*p[1]+.5*c[1]+.25*q[1]+oy,t)});
+g+=ch;
+Object.values(CP).forEach(([x,y])=>g+=`<circle cx="${x}" cy="${y}" r="6" fill="#d0392b" stroke="#fff" stroke-width="2"/>`);
+g+=box(126,213,1,"巴黎","Paris")+box(308,440,2,"日内瓦","Genève")+box(470,545,3,"米兰","Milano")+box(543,646,4,"佛罗伦萨","Firenze")+box(760,425,5,"的里雅斯特","Trieste");
+g+=sm(CP.兰斯[0]+14,CP.兰斯[1]-12,"兰斯","Reims","10/12 一日 · 火车 46 分")+sm(CP.科莫[0]+14,CP.科莫[1]-14,"科莫","Como","10/15 一日 · 约 1 小时")+sm(CP.皮兰[0]-56,CP.皮兰[1]+52,"皮兰","Piran","10/21 一日 · 大巴");
+/* 图例 */
+g+='<rect x="14" y="482" width="320" height="212" rx="10" fill="#f6edd8" stroke="#c8b88f" filter="url(#sh)"/>';
+[["巴黎 Paris · 6 晚","10/13 · TGV 3 小时 18 分"],["日内瓦 Genève · 1 晚","10/14 · EC 4 小时 23 分"],["米兰 Milano · 3 晚","10/17 · 高铁 1 小时 54 分"],["佛罗伦萨 Firenze · 3 晚","10/20 · Intercity 5 小时 04 分"],["的里雅斯特 Trieste · 2 晚","10/22 · 高铁 4 小时 08 分 → 米兰 · 回程"]].forEach(([a,b],i)=>{const y=504+i*34;g+=`<circle cx="36" cy="${y}" r="11" fill="#b23a2a"/>`+tx(36,y+5,i+1,13,"#fff",'text-anchor="middle" font-weight="700"')+tx(56,y,a,14,"#2a2018",`font-weight="700" font-family="${F}"`)+tx(56,y+16,"→ "+b,11.5,"#6b5b45")});
+g+='<path d="M26 680H74" stroke="#d0392b" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="1 7"/>'+tx(84,684,"路线 · 另有兰斯、科莫、皮兰三次一日游",11.5,"#6b5b45");
+/* 标题、手写句、指北针 */
+g+=`<g transform="rotate(-1.5 200 60)"><rect x="14" y="14" width="390" height="98" rx="4" fill="#f3e8cf" stroke="#c8b88f" filter="url(#sh)"/>`+tx(30,56,"欧洲十七日 · 核心路线",34,"#2a2018",`font-weight="700" font-family="${F}"`)+tx(30,80,"Europe · Paris to Trieste · 2026",17,"#5a4a3a",`font-style="italic" font-family="${FL}"`)+tx(30,101,"5 座城市 · 3 次一日游 · 10 月 7 日 – 23 日",13.5,"#5a4a3a")+"</g>";
+g+=`<g transform="rotate(-7 760 60)" font-family="${F}" font-style="italic">`+tx(660,42,"一路向东，",16,"#4a3a2a")+tx(670,66,"从塞纳河的清晨，",16,"#4a3a2a")+tx(680,90,"走到亚得里亚海的黄昏。",16,"#4a3a2a")+"</g>";
+g+='<g transform="translate(850,168)"><circle r="18" fill="#fffaf0" stroke="#cdbd9a"/><path d="M0,-14L5,6L0,2L-5,6Z" fill="#b23a2a"/>'+tx(0,-22,"N",12,"#4a3a2a",'text-anchor="middle"')+"</g>";
+g+=tx(700,688,"Europa",30,"#7a5a3a",`font-style="italic" font-family="${FL}" opacity=".75"`);
+g+='<rect width="900" height="700" filter="url(#gr)" opacity=".5"/></svg>';
+document.getElementById("map").innerHTML=g;
+
+/* 已确认订单（不含确认号、证件号） */
+const B=[["机票",[["10/7 07:25","北京 T3 → 迪拜 T3 EK309；14:40 迪拜 → 巴黎 CDG T2C EK075，20:00 到","Paris Charles de Gaulle Airport Terminal 2C"],["10/22 22:15","米兰 MXP T1 → 迪拜 EK092（10/23 06:20 到）；10:40 → 北京 T3 EK308，22:20 到","Milan Malpensa Airport Terminal 1"]]],
+["火车",[["10/13 12:18","TGV Lyria 9773 巴黎里昂站 → 日内瓦，15:36 到，15 车 560/561","Gare de Lyon Paris"],["10/14 13:27","EC 45 日内瓦 → 米兰中央，17:50 到，6 车 85/87","Gare de Genève-Cornavin"],["10/17 12:10","Frecciarossa 9535 米兰中央 → 佛罗伦萨 S.M.N.，14:04 到，9 车 3A/3B","Milano Centrale"],["10/20 13:33","Intercity 588 Rifredi → 的里雅斯特中央，18:37 到，3 车 8A/8C","Firenze Rifredi"],["10/22 09:39","Frecciarossa 9726 的里雅斯特 → 米兰中央，13:47 到，5 车 20C/20D","Trieste Centrale"],["咨询","Trenitalia +39 06 5210550",""]]],
+["门票",[["10/8 19:00","圆点剧院《De lumière》B02/B04 · 2 bis av. Franklin D. Roosevelt, 75008 · 01 44 95 98 21","Théâtre du Rond-Point Paris"],["10/9 18:00","卢浮宫 ×2（玻璃金字塔或卡鲁塞勒入口）+ 语音导览 ×1 · +33 1 40 20 53 17","Louvre Museum Pyramide"],["10/10 14:30","巴黎圣母院登顶 ×2（迟到即作废）","Notre-Dame de Paris"],["10/12 14:00","Pommery · Brut Royal · Place du Général Gouraud, 兰斯","Champagne Pommery Reims"],["10/14 10:00","万国宫导览 · Pregny 门","Palais des Nations Pregny Gate Geneva"],["10/15 10:00","米兰大教堂 + 屋顶电梯 ×2 · 2 号门 · Piazza Duomo 14/A · +39 02 72023375","Duomo di Milano"],["10/18 09:15","学院美术馆 ×2 + 语音导览 · Via Ricasoli 105，提前 15 分钟，先换纸票","Galleria dell'Accademia Florence"],["10/18 14:15","圣母百花穹顶（Brunelleschi Pass ×2，10/18–20 有效）· Via della Canonica 1 · +39 055 2302885","Duomo Florence Porta della Mandorla"],["10/18 16:45","乌菲兹 ×2","Uffizi Gallery"]]]];
+document.getElementById("bk").innerHTML=B.map(([g,rs])=>`<div class="g">${g}</div>`+rs.map(([t,x,q])=>`<div class="r"><div class="t b">${t}</div><div>${q?`<a href="${Q(q)}" target="_blank" rel="noopener">${x}</a>`:x}</div></div>`).join("")).join("");
+
+/* 逐日 */
+document.getElementById("days").innerHTML=D.map((d,k)=>{const st=d.i.filter(it=>it[2]),rt="https://www.google.com/maps/dir/"+st.map(it=>encodeURIComponent(it[2])).join("/");
+return `<section class="day"><div class="hd"><h3>10月${d.n}日 周${d.w}</h3><span class="m">D${k+1} · ${d.c}</span></div>`+
+d.i.map(it=>`<div class="r"><div class="t${it[3]?" b":""}">${it[0]}</div><div>${it[2]?`<a href="${Q(it[2])}" target="_blank" rel="noopener">${it[1]}</a>`:it[1]}${it[3]?'<span class="tk">已订</span>':""}</div></div>`).join("")+
+(st.length>1?`<details class="rt"><summary>当日路线</summary><ol>${st.map(it=>`<li><a href="${Q(it[2])}" target="_blank" rel="noopener">${it[1]}</a></li>`).join("")}</ol><a href="${rt}" target="_blank" rel="noopener">一键打开全天多点导航 →</a></details>`:"")+
+((d.p=d.p||(window.PHOTOS||{})[d.n])?`<div class="ph">${d.p.map(([f,c])=>`<figure data-f="${f}" data-c="${c||''}"><img src="${f}" alt="${c||''}" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>${c||''}</figcaption></figure>`).join("")}</div>`:"")+`<div class="dy">${d.g}</div></section>`}).join("");
+
+/* 点击放大 */
+const LB=document.createElement("div");LB.id="lb";LB.innerHTML='<button class="x">×</button><button class="p">‹</button><img alt=""><div class="c"></div><button class="n">›</button>';document.body.appendChild(LB);
+let cur=[],ix=0,sx=0;
+const show=i=>{ix=(i+cur.length)%cur.length;const f=cur[ix];LB.querySelector("img").src=f.dataset.f;LB.querySelector(".c").textContent=(f.dataset.c?f.dataset.c+" · ":"")+(ix+1)+" / "+cur.length;LB.querySelectorAll(".p,.n").forEach(b=>b.style.display=cur.length>1?"":"none");LB.classList.add("on")};
+document.addEventListener("click",e=>{const f=e.target.closest(".ph figure");if(f){cur=[...f.parentNode.children];show(cur.indexOf(f));return}if(!LB.classList.contains("on"))return;if(e.target.matches(".p"))show(ix-1);else if(e.target.matches(".n"))show(ix+1);else if(!e.target.matches("#lb img"))LB.classList.remove("on")});
+document.addEventListener("keydown",e=>{if(!LB.classList.contains("on"))return;if(e.key=="Escape")LB.classList.remove("on");if(e.key=="ArrowLeft")show(ix-1);if(e.key=="ArrowRight")show(ix+1)});
+LB.addEventListener("touchstart",e=>sx=e.touches[0].clientX);
+LB.addEventListener("touchend",e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50&&cur.length>1)show(ix+(d<0?1:-1))});
+</script></body></html>
